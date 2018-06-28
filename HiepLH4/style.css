@@ -22,7 +22,7 @@ html, body{
 }
 #navbar ul{
     height: 88%;
-    overflow-y:scroll;
+    overflow-y:auto;
     overflow-x: hidden;
 }
 
@@ -91,7 +91,7 @@ code{
         height:207px;
     }
 
-    #narbar{
+    #navbar{
         background-color:white;
         position:absolute;
         top:0;
@@ -112,6 +112,7 @@ code{
 }
 @media only screen and (max-width: 400px){
     #main-doc{
+        position: relative;
         margin-left:-10px;
     }
     code{
@@ -121,5 +122,11 @@ code{
         padding-left: 10px;
         padding-right: 45px;
         min-width: 233px;
+    }
+   
+}
+@media only screen and (max-width: 360px) {
+    #navbar{
+        position: relative;
     }
 }
